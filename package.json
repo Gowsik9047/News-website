@@ -1,9 +1,10 @@
 {
-  "homepage": "https://<your-username>.github.io/<repo-name>",
+  "homepage": "https://Gowsik9047.github.io/news-website",
   "name": "news-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.1.0",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.0",

@@ -1,13 +1,102 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Navbar base styling */
+.navbar {
+  height: 64px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around !important;
+  align-items: center;
+  background-color: #E6E6E6;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.heading,
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.heading p {
+  color: red;
+  font-size: 13px;
+}
+
+.nav-links a {
+  color: rgb(86, 0, 0);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #e50a0a;
+}
+
+/* Hamburger menu */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  color: rgb(86, 0, 0);
+}
+
+.menu-icon a:hover {
+  color: #e50a0a;
+}
+
+.live-header {
+  width: 100%;
+  height: 53px;
+  background-color: #F4BF2F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.live-header button {
+  background-color: red;
+  color: white;
+  border-radius: 35%;
+  border: none;
+  padding: 5px 15px;
+  font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    flex-direction: column;
+    background-color: #E6E6E6;
+    width: 100%;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  .nav-links.open {
+    max-height: 300px;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
 }
