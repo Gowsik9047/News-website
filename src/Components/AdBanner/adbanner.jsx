@@ -1,7 +1,10 @@
+import React from "react";
+import adimg from "../../assets/images/ad.jpg";
+
 function AdBanner() {
   return (
     <div className="ad-banner">
-      {/* <img src="/ads/sale.jpg" alt="Ad" /> */}
+      <img src={adimg} alt="Ad" />
     </div>
   );
 }

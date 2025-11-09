@@ -23,8 +23,6 @@ export default function FeaturedNews() {
   const side = rest.slice(0, 2);
   const smalls = rest.slice(2);
 
-  console.log(featuredData);
-
   return (
     <section className="featured-wrapper">
       <div className="top-grid">
