@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../images/logo.png";
+// import logo from "../images/logo.png";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,12 +10,12 @@ function Navbar() {
 
   return (
     <div>
-    <nav className="navbar">
-      <img
-        src={logo}
-        alt="Logo"
-        className=""
-      />
+      <nav className="navbar">
+        {/* <img
+          src={logo}
+          alt="Logo"
+          className=""
+        /> */}
         <div className="heading">
           <p>அரசியல்</p>
           <p>மனித உரிமைகள்</p>
@@ -30,15 +30,18 @@ function Navbar() {
           <a href="#sports"><i className="fa-solid fa-sun"></i></a>
           <a href="#tech"><i className="fa-solid fa-user"></i></a>
         </div>
-
-        <div className="menu-icon fa-solid fa-bars" onClick={toggleMenu}>
+        <div className="menu-icon" onClick={toggleMenu}>
+          <i className="fa-solid fa-bars"></i>
         </div>
-    </nav>
-    <div className="live-header">
-      <button>Live</button>
-      <span>உடனடி: மைல்கல் சிவில் உரிமைகள் வழக்கில் நீதிமன்ற தீர்ப்பு</span>
-      <i className="fa-solid fa-close"></i>
-    </div>
+      </nav>
+      <div className="live-header">
+        <section className="live-headline">
+          <button>Live</button>
+          <span>உடனடி: மைல்கல் சிவில் உரிமைகள் வழக்கில் நீதிமன்ற தீர்ப்பு</span>
+        </section>
+        <i className="fa-solid fa-close"></i>
+
+      </div>
     </div>
 
   );
