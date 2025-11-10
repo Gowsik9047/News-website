@@ -1,3 +1,5 @@
+import React from "react";
+
 function LiveTicker() {
   return (
     <div className="live-header">
