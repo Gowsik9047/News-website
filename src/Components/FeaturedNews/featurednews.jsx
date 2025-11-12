@@ -1,24 +1,7 @@
-// function FeaturedNews({ image, title, category, description }) {
-//   return (
-//     // <div className="featured-news" style={{ backgroundImage: `url(${image})` }}>
-//       <div className="overlay">
-//         <span className="category">{category}</span>
-//         <h2>{title}</h2>
-//         <p>{description}</p>
-//         <button>மேலும் படிக்க</button>
-//       </div>
-//     // </div>
-//   );
-// }
-// export default FeaturedNews;
-
-
-// src/components/FeaturedNews.jsx
-import React from "react";
 import NewsCard from "../NewsCard/newscard";
 import featuredData from "../../Data/datafeatured";
 
-export default function FeaturedNews() {
+function FeaturedNews() {
   const [hero, ...rest] = featuredData;
   const side = rest.slice(0, 2);
   const smalls = rest.slice(2);
@@ -45,3 +28,5 @@ export default function FeaturedNews() {
     </section>
   );
 }
+
+export default FeaturedNews;

@@ -1,4 +1,3 @@
-import React from "react";
 import img1 from "../assets/images/heading image 1.jpg"
 import img2 from "../assets/images/heading image 2.jpg"
 import img3 from "../assets/images/heading image 3.jpg"
