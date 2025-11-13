@@ -1,6 +1,6 @@
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 
 function LoginPage({ loginDatasender }) {
     const [username, password, email] = [useRef(null), useRef(null), useRef(null)];
